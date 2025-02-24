@@ -4,19 +4,25 @@
 
 console.log("type_coercion_concatenation_interpolation_playground.js is running")
 
-// PART 1: Type Coercion
-
+// PART 1: Type Coercion - The automatic implicit conversion of values from one data type to another
+      // Type conversion is can be either implicit or explicit
 // 1a. Look at the variable declarations and assignments below.  Guess what will log for creatureCount.  Uncomment and run it.
-        // var quantity = 3;
-        // var mythicalCreature = " unicorns";
-        // var creatureCount = quantity + mythicalCreature;
-        // console.log(creatureCount)
+        var quantity = 3;
+        console.log('quantity: ', quantity)
+        var mythicalCreature = " unicorns";
+        console.log('mythicalCreature: ', mythicalCreature)
+        var creatureCount = quantity + mythicalCreature;
+        console.log(creatureCount)
 
 // 1b. In the example above, what is the data type of the quantity variable?
+      // Integer
 // 1c. In the example above, what is the data type of the mythicalCreature variable?
+      // String
 // 1d. In the example above, what is the data type of the creatureCount variable?  
 //     How can a number plus a string equal a string?
-//     Take a few minutes to look up and read about Type Coercion in the MDN docs.
+      // JavaScript coered the 3 from an integer to a string and then concatenated the two strings together
+      // If it a number as a string with and integer, you would have to explicitly convert the number string using the Number() method to get it to return a sum
+      //     Take a few minutes to look up and read about Type Coercion in the MDN docs.
 
 
 
